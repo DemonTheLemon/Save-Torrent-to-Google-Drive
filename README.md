@@ -15,7 +15,8 @@ Obviously, you can use a torrent client to directly download the torrent files. 
 - **Archival purposes**. Torrents are not great for long-term. If a torrent dies (i.e. having 0 seeders), acquisition of file is next to impossible. If you want to get a secure your own copy of a torrent, it would be a good idea to store them on Google Drive. By doing this, you can get access to the file on demand.
 
 # How do I use this script?
-[Open in Google Colab](https://colab.research.google.com/drive/1aAkFPo6g2thDxz0I5eU-R82AXrc9YikB?usp=sharing)
+[Open in Google Colab](https://colab.research.google.com/github.com/DemonTheLemon/Torrent-To-Google-Drive-Downloader-v2/blob/master/Torrent_to_GDrive_Downloader.ipynb)
+<a href="https://colab.research.google.com/github/spireon-ex10/Torrent-To-Google-Drive-Downloader/blob/master/Torrent_To_Google_Drive_Downloader_v2.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 First of all, acquire the magnet link of the torrent you want to download.
 
