@@ -1,47 +1,46 @@
-# This notebook is NOT completely useless
-~After releasing notebook, I just realized this notebook is completely useless because you know we can select which files to download so I don't have to download the whole thing also these days most of the torrent clients have media players so this program is completely useless but I'm going to keep it on my Github because the source code is might be useful for somebody.~
+# Torrent to GDrive Script Documentation
+## What is this used for?
+This is a modified script is used for downloading torrent files directly to Google Drive. The original creator of this script can be found [on GitHub](https://github.com/r12habh/Torrent-To-Google-Drive-Downloader-v2).
 
-**Best way to do cloud torrenting.**
+# Why would I ever use this in the first place?
+Obviously, you can use a torrent client to directly download the torrent files. Also, if you were to end up using this script, you would still have to download it from Google Drive in order to acquire the file. So does this make the script redundant and obsolete?
 
-# Torrent To Google Drive Downloader
-Simple notebook to stream torrent files to Google Drive using Google Colab.
+***Absolutely not!*** Here are some use case of Torrent to GDrive Script:
+- **Workaround if torrenting is restricted**. Your ISP or other establishments with access to your internet connection may decide to block torrenting. This is a great alternative for such scenario.
 
-<a href="https://colab.research.google.com/github/spireon-ex10/Torrent-To-Google-Drive-Downloader/blob/master/Torrent_To_Google_Drive_Downloader_v2.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+- **Faster acquisition of files**. The script runs on a VM (Virtual Machine) instance from Google, expect the download speed for torrents to fast. based on my experience, it only took around 15s to download a 500 MB file. However, downloading the file from Google Drive to your device will still depend on your internet connection.
 
-### Tutorial
-1. Click the badge which says 'Open in Colab'.
-2. Goto **File > Save a copy in Drive...** (a new tab opens with the copy of this notebook).
-3. Run the whole notebook (**Runtime > Run all**).
-4. Follow directions there.
+- **More stable download speed.** Because torrenting's architecture is based on P2P Networks (i.e. trackers and seeding), download speed for torrents may be inconsistent. Downloading the file directly from Google Drive is more consistent (and possibly faster) because the download is happening on Google's servers instead of relying on third-parties.
 
-After download finishes the downloaded files will be in there in your drive in a folder named "***Torrent***".
+- **Archival purposes**. Torrents are not great for long-term. If a torrent dies (i.e. having 0 seeders), acquisition of file is next to impossible. If you want to get a secure your own copy of a torrent, it would be a good idea to store them on Google Drive. By doing this, you can get access to the file on demand.
 
-### What is the purpose of it?
-1. Because of Google Servers speed, I downloaded 35GB of file and the average speed was 60MBPS.
-2. Because it is in the cloud, by that I mean I can access it anywhere on my phone, tablet or etc without copying file to all of them.
-3. You can bypass any restrictions on torrenting set by your ISP and access your files through drive (neat isn't it!).
+# How do I use this script?
+[Open in Google Colab](https://colab.research.google.com/drive/1aAkFPo6g2thDxz0I5eU-R82AXrc9YikB?usp=sharing)
 
-# Screenshot
+First of all, acquire the magnet link of the torrent you want to download.
+
+Click the badge which says 'Open in Google Colab'.
+
+Goto **File** > **Save a copy in Drive**... (a new tab opens with the copy of this notebook).
+
+Run the whole notebook (Runtime > Run all).
+Follow directions there.
 
 ![Getting Torrent Link](https://github.com/spireon-ex10/Torrent-To-Google-Drive-Downloader-v2/raw/master/Image/01.jpg)
 
 ![Pasting Torrent Link](https://github.com/spireon-ex10/Torrent-To-Google-Drive-Downloader-v2/raw/master/Image/02.jpg)
 
+*I just copied the screenshot from creator since I'm too lazy to make my own. Sorry.*
 
+# Frequently-asked Questions
 
-### Frequently Asked Questions
-1. **How get more disk space**: We can now download bigger torrents. To do it
-
-	> Go to Runtime -> Change Runtime and give GPU as the Hardware Accelerator.  
-You will get around 384GB to download any torrent you want.
-But this file won't be uploaded to your drive until you have that much space in drive it'll stay in colab's disk.
+1. **How to get more disk space**: We can now download bigger torrents. To do it:
+> Go to Runtime -> Change Runtime and give GPU as the Hardware Accelerator.  
+You will get around 384GB to download any torrent you want.<br>
+But this file won't be uploaded to your drive until you have that much space in drive it'll stay in colab's disk.<br>
+Alternatively, you can use a G Suite account for downloading the files since it has unlimited storage. However, downloaded torrents cannot be transferred to team drives (yet?)
 
 2. **Downloading missing files without re-downloading whole torrent**: If somehow some files are missing try to re-download torrent (just by re-running the cell). Fastresume will check files.
-
-
-
-
-
 
 # This whole repo is against Google Colab policy and you shouldn't be using it.
 > **Why are hardware resources such as T4 GPUs not available to me?**
@@ -49,5 +48,3 @@ The best available hardware is prioritized for users who use Colaboratory intera
 Please note that using Colaboratory for cryptocurrency mining is disallowed entirely, and may result in being banned from using Colab altogether.
 
 <sub>Source: https://research.google.com/colaboratory/faq.html</sub>
-
-### Maintained By : [Rishabh Singh](https://www.linkedin.com/in/singh-rishabh/)
